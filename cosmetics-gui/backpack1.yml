@@ -1,0 +1,60 @@
+title: "&f솯"
+size: 54
+
+items:
+  axolotl:
+    type: COSMETICS
+    cosmetics: axolotl
+    slots: [19]
+  bag:
+    type: COSMETICS
+    cosmetics: bag
+    slots: [20]
+  guitar:
+    type: COSMETICS
+    cosmetics: guitar
+    slots: [21]
+  unEquipBackpack:
+    type: UNEQUIP_BACKPACK
+    material: PAPER
+    customModelData: 8011
+    name: '&cUnequip'
+    glow: false
+    slots: [49]
+    lore: []
+  helmetCategory:
+    type: OPEN_GUI
+    gui: helmet1.yml
+    material: PAPER
+    customModelData: 8012
+    name: "&eHelmet Category"
+    glow: false
+    slots: [3]
+    lore:
+      - "&7Click to go to the helmet category!"
+  backpackCategory:
+    type: OPEN_GUI
+    gui: backpack1.yml
+    material: PAPER
+    customModelData: 8012
+    name: "&eBackpack Category"
+    glow: false
+    slots: [5]
+    lore:
+      - "&7Click to go to the backpack category!"
+  backButton:
+    type: DUMMY
+    material: PAPER
+    customModelData: 8010
+    name: '&cBack'
+    glow: false
+    slots: [46]
+    lore: []
+  nextButton:
+    type: DUMMY
+    material: PAPER
+    customModelData: 8008
+    name: '&aNext'
+    glow: false
+    slots: [52]
+    lore: []
