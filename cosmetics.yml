@@ -1,0 +1,173 @@
+cosmetics:
+  axolotl:
+    material: PAPER
+    customModelData: 11016
+    permission: "cosmetics.backpack.axolotl"
+    paintable: false
+    unlockedItem:
+      material: PAPER
+      name: '&bAxolotl &a(Unlocked)'
+      customModelData: 11016
+      lore:
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle'
+    lockedItem:
+      material: PAPER
+      name: '&bAxolotl &c(Locked)'
+      customModelData: 8011
+      lore:
+        - '&cYou do not currently own this'
+        - '&ccosmetic, but you can buy it'
+        - '&cfrom out store.'
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle preview'
+  guitar:
+    material: PAPER
+    customModelData: 11017
+    permission: "cosmetics.backpack.guitar"
+    paintable: false
+    unlockedItem:
+      material: PAPER
+      name: '&bGuitar &a(Unlocked)'
+      customModelData: 11017
+      lore:
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle'
+    lockedItem:
+      material: PAPER
+      name: '&bGuitar &c(Locked)'
+      customModelData: 8011
+      lore:
+        - '&cYou do not currently own this'
+        - '&ccosmetic, but you can buy it'
+        - '&cfrom out store.'
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle preview'
+  bag:
+    material: LEATHER_HORSE_ARMOR
+    customModelData: 10034
+    permission: "cosmetics.backpack.bag"
+    paintable: true
+    unlockedItem:
+      material: LEATHER_HORSE_ARMOR
+      name: '&bBag &a(Unlocked)'
+      customModelData: 10034
+      lore:
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle'
+    lockedItem:
+      material: LEATHER_HORSE_ARMOR
+      name: '&bBag &c(Locked)'
+      customModelData: 8011
+      lore:
+        - '&cYou do not currently own this'
+        - '&ccosmetic, but you can buy it'
+        - '&cfrom out store.'
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle preview'
+  hornCrown:
+    type: HELMET
+    material: PAPER
+    customModelData: 11018
+    permission: "cosmetics.helmet.horncrown"
+    paintable: false
+    unlockedItem:
+      material: PAPER
+      name: "&bHorn Crown &a(Unlocked)"
+      customModelData: 11018
+      lore:
+        - ""
+        - "&7https://store.example.com"
+        - " &3➜ Click to toggle"
+    lockedItem:
+      material: PAPER
+      name: "&bHorn Crown &c(Locked)"
+      customModelData: 8011
+      lore:
+        - '&cYou do not currently own this'
+        - '&ccosmetic, but you can buy it'
+        - '&cfrom out store.'
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle preview'
+  bunny:
+    type: HELMET
+    material: PAPER
+    customModelData: 8002
+    permission: "cosmetics.helmet.bunny"
+    paintable: false
+    unlockedItem:
+      material: PAPER
+      name: "&bBunny &a(Unlocked)"
+      customModelData: 8002
+      lore:
+        - ""
+        - "&7https://store.example.com"
+        - " &3➜ Click to toggle"
+    lockedItem:
+      material: PAPER
+      name: "&bBunny &c(Locked)"
+      customModelData: 8011
+      lore:
+        - '&cYou do not currently own this'
+        - '&ccosmetic, but you can buy it'
+        - '&cfrom out store.'
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle preview'
+  cowboy:
+    type: HELMET
+    material: PAPER
+    customModelData: 8003
+    permission: "cosmetics.helmet.cowboy"
+    paintable: false
+    unlockedItem:
+      material: PAPER
+      name: "&bCowboy &a(Unlocked)"
+      customModelData: 8003
+      lore:
+        - ""
+        - "&7https://store.example.com"
+        - " &3➜ Click to toggle"
+    lockedItem:
+      material: PAPER
+      name: "&bCowboy &c(Locked)"
+      customModelData: 8011
+      lore:
+        - '&cYou do not currently own this'
+        - '&ccosmetic, but you can buy it'
+        - '&cfrom out store.'
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle preview'
+  crown:
+    type: HELMET
+    material: PAPER
+    customModelData: 8004
+    permission: "cosmetics.helmet.crown"
+    paintable: false
+    unlockedItem:
+      material: PAPER
+      name: "&bCrown &a(Unlocked)"
+      customModelData: 8004
+      lore:
+        - ""
+        - "&7https://store.example.com"
+        - " &3➜ Click to toggle"
+    lockedItem:
+      material: PAPER
+      name: "&bCrown &c(Locked)"
+      customModelData: 8011
+      lore:
+        - '&cYou do not currently own this'
+        - '&ccosmetic, but you can buy it'
+        - '&cfrom out store.'
+        - ''
+        - '&7https://store.example.com'
+        - ' &3➜ Click to toggle preview'
