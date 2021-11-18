@@ -1,0 +1,16 @@
+# Do not touch this file!
+
+data:
+  1-22-333-4444-55555-666666: #example-player-uuid
+    backpack:
+      name: bag #player-cosmetics-backpack
+      color: #colorable-cosmetics
+        r: 250
+        g: 105
+        b: 0
+    helmet:
+      name: cowboy #player-cosmetics-helmet
+      color: #colorable-cosmetics
+        r: 128
+        g: 0
+        b: 0
