@@ -14,14 +14,6 @@ items:
     type: COSMETICS
     cosmetics: guitar
     slots: [21]
-  unEquipBackpack:
-    type: UNEQUIP_BACKPACK
-    material: PAPER
-    customModelData: 8011
-    name: '&cUnequip'
-    glow: false
-    slots: [49]
-    lore: []
   helmetCategory:
     type: OPEN_GUI
     gui: helmet1.yml
@@ -42,6 +34,14 @@ items:
     slots: [5]
     lore:
       - "&7Click to go to the backpack category!"
+  unEquipBackpack:
+    type: UNEQUIP_BACKPACK
+    material: PAPER
+    customModelData: 8011
+    name: '&cUnequip'
+    glow: false
+    slots: [49]
+    lore: []
   backButton:
     type: DUMMY
     material: PAPER
