@@ -1,0 +1,64 @@
+title: "&f솈"
+size: 54
+
+items:
+  hornCrown:
+    type: COSMETICS
+    cosmetics: hornCrown
+    slots: [19]
+  bunny:
+    type: COSMETICS
+    cosmetics: bunny
+    slots: [20]
+  cowboy:
+    type: COSMETICS
+    cosmetics: cowboy
+    slots: [21]
+  crown:
+    type: COSMETICS
+    cosmetics: crown
+    slots: [22]
+  helmetCategory:
+    type: OPEN_GUI
+    gui: helmet1.yml
+    material: PAPER
+    customModelData: 8012
+    name: "&eHelmet Category"
+    glow: false
+    slots: [3]
+    lore:
+      - "&7Click to go to the helmet category!"
+  backpackCategory:
+    type: OPEN_GUI
+    gui: backpack1.yml
+    material: PAPER
+    customModelData: 8012
+    name: "&eBackpack Category"
+    glow: false
+    slots: [5]
+    lore:
+      - "&7Click to go to the backpack category!"
+  unEquipBackpack:
+    type: UNEQUIP_HELMET
+    material: PAPER
+    customModelData: 8011
+    name: '&cUnequip'
+    glow: false
+    slots: [49]
+    lore: []
+  backButton:
+    type: DUMMY
+    material: PAPER
+    customModelData: 8010
+    name: '&cBack'
+    glow: false
+    slots: [46]
+    lore: []
+  nextButton:
+    type: DUMMY
+    material: PAPER
+    customModelData: 8008
+    name: '&aNext'
+    glow: false
+    slots: [52]
+    lore: []
