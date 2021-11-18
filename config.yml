@@ -1,0 +1,63 @@
+# What is the default page that will be open when players
+# using /cosmetics command
+defaultPage: backpack1.yml
+
+# Should we unequip the cosmetic if the player is wearing elytra?
+elytraUnequip: true
+
+# Should we remove the equip sound when player equipping backpack?
+silentEquip: true
+
+# This is our current workaround, when the player is holding a trident with riptide enchantment
+# the backpack will be removed, due to the current issues where you can't use
+# a trident with riptide enchantment while using a backpack
+tridentUnequip: true
+
+# Should we unequip the backpack cosmetics If the player is in water?
+waterUnequip: true
+
+# List of teleportation commands to fix the current issues
+# If the command on the list is executed, we will remove the backpack
+# and the backpack will re-equip again
+# Note: all commands below must be on lower cases
+# Explanation:
+# (number) - The delay number in second
+#   (list of commands) - If you executed one of those command, your backpack will be unequipped for
+#                         x seconds, depends on the number.
+teleportationUnequip:
+  5:
+  - '/mv tp'
+  - '/mvtp'
+  - '/warp'
+  - '/tp'
+  - '/tpaccept'
+  120:
+  - '/tpa'
+  - '/rtp'
+
+# Should we instantly re-equip the cosmetics if player is already
+# teleported instead waiting for the delay?
+instantReEquip: true
+
+# The aliases of /cosmetics command
+commandAliases:
+- 'cosmetic'
+- 'cm'
+
+messages:
+  prefix: '&e&lCOSMETICS &a//'
+  noPermission: '{prefix} &cYou don''t have enough permission!'
+  noPermissionCosmetics: '{prefix} &cYou don''t have enough permission to use this cosmetics!'
+  reload: '{prefix} &eYou have reloaded the configuration!'
+  invalidPlayer: '{prefix} &cThat player is not online!'
+  cosmeticsNotExist: '{prefix} &cThat cosmetics is not exists!'
+  failedUnequip: '{prefix} &cYou can''t unequip others players'' cosmetics!'
+  cosmeticsNotColorable: '{prefix} &cCosmetics ''{cosmetic}'' is not colorable!'
+  help:
+  - '&6&lBackpack Cosmetics &7- by ZiwoxYT & aglerr'
+  - '&6- /cosmetics &7- open the cosmetics menu'
+  - '&6- /cosmetics open (player) [page-name] &7- open cosmetics menu for other players'
+  - '&6- /cosmetics help &7- shows help messages'
+  - '&6- /cosmetics equip (cosmetics) [player] &7- equip cosmetics for you/others'
+  - '&6- /cosmetics unequip [player] &7- un-equip cosmetics for you/others'
+  - '&6- /cosmetics reload &7- reload the configuration'
