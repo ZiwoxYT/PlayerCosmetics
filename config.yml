@@ -2,6 +2,21 @@
 # using /cosmetics command
 defaultPage: backpack1.yml
 
+# MySQL feature to save/load last used cosmetics
+# If disabled, we will use SQL
+mysql:
+  enabled: false
+  host: localhost
+  port: 3306
+  database: db_playercosmetics
+  user: root
+  password: password
+  useSSL: false
+  hikari:
+    waitTimeout: 600000
+    maxLifetime: 1800000
+    publicKeyRetrieval: true
+
 # Should we unequip the cosmetic if the player is wearing elytra?
 elytraUnequip: true
 
