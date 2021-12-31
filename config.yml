@@ -1,6 +1,17 @@
 # What is the default page that will be open when players
 # using /cosmetics command
-defaultPage: backpack1.yml
+defaultPage: 'backpack1.yml'
+
+# Should we let the plugin know that you're preferred to use the
+# old config instead the new config system?
+# (Only use this If you have the old configuration cosmetics.yml)
+useOldConfig: false
+
+# Should we keep updating placeholder value on the cosmetics gui?
+# The time is in ticks, 20 ticks = 1 second
+autoRefresh:
+  enabled: true
+  updateEvery: 20
 
 # MySQL feature to save/load last used cosmetics
 # If disabled, we will use SQL
@@ -17,11 +28,15 @@ mysql:
     maxLifetime: 1800000
     publicKeyRetrieval: true
 
+# How long should we wait before equipping backpack cosmetic on join
+# We recommend you to add a delay at least 1 second to prevent issues
+backpack-equip-join-delay: 3
+
 # Should we unequip the cosmetic if the player is wearing elytra?
 elytraUnequip: true
 
 # Should we remove the equip sound when player equipping backpack?
-silentEquip: true
+silentEquip: false
 
 # This is our current workaround, when the player is holding a trident with riptide enchantment
 # the backpack will be removed, due to the current issues where you can't use
@@ -29,7 +44,16 @@ silentEquip: true
 tridentUnequip: true
 
 # Should we unequip the backpack cosmetics If the player is in water?
-waterUnequip: true
+waterUnequip: false
+
+# Should we unequip the backpack cosmetics If player is in sleeping state?
+sleepUnequip: true
+
+# Should we unequip the backpack cosmetics If player is in crawling state?
+crawlUnequip: true
+
+# Turn this on If you're having a sound spamming while equipping helmet
+helmetIssues: false
 
 # List of teleportation commands to fix the current issues
 # If the command on the list is executed, we will remove the backpack
@@ -41,14 +65,13 @@ waterUnequip: true
 #                         x seconds, depends on the number.
 teleportationUnequip:
   5:
-  - '/mv tp'
-  - '/mvtp'
-  - '/warp'
-  - '/tp'
-  - '/tpaccept'
+    - "/mv tp"
+    - "/mvtp"
+    - "/warp"
+    - "/tp"
+    - "/tpaccept"
   120:
-  - '/tpa'
-  - '/rtp'
+    - "/tpa"
 
 # Should we instantly re-equip the cosmetics if player is already
 # teleported instead waiting for the delay?
@@ -56,23 +79,23 @@ instantReEquip: true
 
 # The aliases of /cosmetics command
 commandAliases:
-- 'cosmetic'
-- 'cm'
+  - "cosmetic"
+  - "cm"
 
 messages:
-  prefix: '&e&lCOSMETICS &a//'
-  noPermission: '{prefix} &cYou don''t have enough permission!'
-  noPermissionCosmetics: '{prefix} &cYou don''t have enough permission to use this cosmetics!'
-  reload: '{prefix} &eYou have reloaded the configuration!'
-  invalidPlayer: '{prefix} &cThat player is not online!'
-  cosmeticsNotExist: '{prefix} &cThat cosmetics is not exists!'
-  failedUnequip: '{prefix} &cYou can''t unequip others players'' cosmetics!'
-  cosmeticsNotColorable: '{prefix} &cCosmetics ''{cosmetic}'' is not colorable!'
+  prefix: "&6&l[Cosmetics]"
+  noPermission: "{prefix} &cYou don't have enough permission!"
+  noPermissionCosmetics: "{prefix} &cYou don't have enough permission to use this cosmetics!"
+  reload: "{prefix} &aYou have reloaded the configuration!"
+  invalidPlayer: "{prefix} &cThat player is not online!"
+  cosmeticsNotExist: "{prefix} &cThat cosmetics is not exists!"
+  failedUnequip: "{prefix} &cYou can't unequip others players' cosmetics!"
+  cosmeticsNotColorable: "{prefix} &cCosmetics '{cosmetic}' is not colorable!"
   help:
-  - '&e&lCOSMETICS &a// &eVersion 1.5.1'
-  - '&e/cosmetics &8&l» &eopen the cosmetics menu'
-  - '&e/cosmetics help &8&l» &eshows help messages'
-  - '&e/cosmetics open (player) {page-name} &8&l» &eopen cosmetics menu for you/other'
-  - '&e/cosmetics equip (cosmetics) {player} {color} &8&l» &eequip cosmetics for you/others'
-  - '&e/cosmetics unequip {player} &8&l» &eun-equip cosmetics for you/others'
-  - '&e/cosmetics reload &8&l» &ereload the configuration'
+    - "&6&lBackpack Cosmetics &7- by aglerr"
+    - "&6- /cosmetics &7- open the cosmetics menu"
+    - "&6- /cosmetics open (player) [page-name] &7- open cosmetics menu for other players"
+    - "&6- /cosmetics help &7- shows help messages"
+    - "&6- /cosmetics equip (cosmetics) [player] &7- equip cosmetics for you/others"
+    - "&6- /cosmetics unequip (player) [backpack/helmet] &7- un-equip cosmetics for you/others"
+    - "&6- /cosmetics reload &7- reload the configuration"

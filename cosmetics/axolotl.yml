@@ -1,0 +1,56 @@
+# The cosmetic item that is gonna be used on
+# the backpack model
+cosmetic-item:
+  material: PAPER
+  display-name: "&b&lAxolotl"
+  customModelData: 11016
+  glowing: false
+  lore:
+    - "&7Any information here..."
+    - "&7Axolotl is great!"
+
+# The type of the cosmetics
+# Currently available cosmetics:
+# - BACKPACK
+# - HELMET
+type: BACKPACK
+
+# The permission to use the cosmetic
+permission: "cosmetics.backpack.axolotl"
+
+# Can this item's color changed? When it's set to 'true'
+# upon equipping it on cosmetics gui, it will open color selection gui instead
+# however, there are certain requirements for the paintable cosmetic.
+# Requirements:
+# - The material for the cosmetic must be a color changeable material, such as
+#   leather armor, leather horse armor, etc.
+# - This paintable option must be set to true
+paintable: false
+
+# This information will be used on cosmetic gui when player
+# have permission to use this cosmetic.
+unlockedItem:
+  material: PAPER
+  customModelData: 11016
+  name: "&bAxolotl &a(Unlocked)"
+  glowing: false
+  lore:
+    - ""
+    - "&7https://store.example.com"
+    - " &3➜ Click to toggle"
+
+# This information will be used on cosmetic gui when player doesn't
+# have permission tto use this cosmetic.
+lockedItem:
+  material: PAPER
+  customModelData: 8011
+  name: "&bAxolotl &c(Locked)"
+  glowing: false
+  lore:
+    - "&cYou do not currently own this"
+    - "&ccosmetic, but you can buy it"
+    - "&cfrom out store."
+    - ""
+    - "&7https://store.example.com"
+    - " &3➜ Click to toggle preview"
+
