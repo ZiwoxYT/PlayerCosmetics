@@ -1,0 +1,19 @@
+# Should this module be enabled?
+# Requires Citizens plugin
+enabled: false
+
+# Which NPC should we equip the cosmetics?
+# Format Explanation
+# (npc)
+#   (npc-id) - The ID of the NPC
+#     (cosmeticList -|) - Thehe list of cosmetics that the NPC gonna equip
+#                         If you put 2 same cosmetic type, it will overlapping each other.
+#                         Make sure to not do that!
+npc:
+  1:
+    - "axolotl"
+    - "bunny"
+  2:
+    - "guitar"
+  3:
+    - "crown"

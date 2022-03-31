@@ -2,12 +2,12 @@
 # the backpack model
 cosmetic-item:
   material: PAPER
-  display-name: "&bHorn Crown"
-  customModelData: 11018
+  display-name: "&c&lHeart Cape"
+  customModelData: 11019
   glowing: false
   lore:
-    - "Mythically, this crown was"
-    - "&7once used by Poseidon."
+    - "&7Any information here..."
+    - "&7You look cool!"
 
 # Commands that will be executed after equipping cosmetics
 # Use {player} for the player's username
@@ -21,10 +21,10 @@ commands-on-unequip: []
 # Currently available cosmetics:
 # - BACKPACK
 # - HELMET
-type: HELMET
+type: BACKPACK
 
 # The permission to use the cosmetic
-permission: "cosmetics.helmet.horncrown"
+permission: "cosmetics.backpack.heartcape"
 
 # Can this item's color changed? When it's set to 'true'
 # upon equipping it on cosmetics gui, it will open color selection gui instead
@@ -39,8 +39,8 @@ paintable: false
 # have permission to use this cosmetic.
 unlockedItem:
   material: PAPER
-  customModelData: 11018
-  name: "&bHorn Crown &a(Unlocked)"
+  customModelData: 11019
+  name: "&c&lHeart Cape &a(Unlocked)"
   glowing: false
   lore:
     - ""
@@ -51,8 +51,8 @@ unlockedItem:
 # have permission tto use this cosmetic.
 lockedItem:
   material: PAPER
-  customModelData: 8011
-  name: "&bHorn Crown &c(Locked)"
+  customModelData: 11019
+  name: "&c&lHeart Cape &c(Locked)"
   glowing: false
   lore:
     - "&cYou do not currently own this"
@@ -61,4 +61,3 @@ lockedItem:
     - ""
     - "&7https://store.example.com"
     - " &3➜ Click to toggle preview"
-

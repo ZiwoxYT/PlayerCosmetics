@@ -1,0 +1,71 @@
+# The rotation speed of the model
+rotation-speed: 3
+
+# Should we clear chat when enter wardrobe?
+clear-chat: true
+
+# Should we disable player to type any text on the chat?
+disable-chat: true
+
+# Should we disable player receiving any chat from other players?
+disable-receiving-chat: true
+
+# Should we disable player to execute any commands?
+disable-execute-commands: true
+
+# How long can player be inside wardrobe?
+# Time is in seconds, to disable put '0'
+# This feature is mainly to prevent player from afk-ing inside wardrobe
+time-limit: 300
+
+# The bossbars that will be shown when player is in wardrobe
+# You can create as many bossbars as you want
+bossbars:
+  exit-instruction:
+    title: "&cSneak to leave the wardrobe"
+    style: SOLID
+    color: YELLOW
+  inventory-instruction:
+    title: "&6Punch to open the catelogue"
+    style: SOLID
+    color: YELLOW
+
+# The title bar that will be sent when entering and exiting wardrobe
+# Usually this is for a black screen fade in/out animation
+title-bar:
+  title: ""
+  sub-title: ""
+  fade-in: 20
+  stay: 40
+  fade-out: 20
+
+# All sounds that will be used on wardrobe
+sounds:
+  # This sound will be used when player enter wardrobe session
+  on-enter-wardrobe:
+    enable: true
+    sound: BLOCK_BEEHIVE_ENTER
+    volume: 1.0
+    pitch: 1.0
+  # This sound will be used when player leave wardrobe session
+  on-leave-wardrobe:
+    enable: true
+    sound: BLOCK_BEEHIVE_EXIT
+    volume: 1.0
+    pitch: 1.0
+
+# Messages that will be used related to wardrobe
+# (on-enter) - used when player enter wardrobe
+# (on-exit-completed) - used when player exit wardrobe and has permission to all selected cosmetics
+# (on-exit-no-permission) - used when player exit wardrobe and doesn't have permission to one of the cosmetics
+messages:
+  on-enter:
+    - "&aYou have entered wardrobe, choose your favorite items!"
+    - "&f"
+    - "&6&lCLICK &7- to open cosmetics menu"
+    - "&6&lSNEAK &7- to leave wardrobe"
+  on-exit-completed:
+    - "&aYou have leave wardrobe, come back anytime! ;)"
+  on-exit-no-permission:
+    - "&cYou have leave wardrobe but it seems that you do not have permission on one of the cosmetics"
+    - "&cUnlocks your favorite cosmetics at: &6www.shop.com"

@@ -4,6 +4,9 @@ title: "&f섈"
 # The size of the GUI
 size: 45
 
+# The material of the paint button
+paint-button-material: LEATHER_HORSE_ARMOR
+
 # The custom model data of paint button, the default one
 # will be the item with square model
 paint-button-cmd: 8005

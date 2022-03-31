@@ -14,6 +14,18 @@ items:
     type: COSMETICS
     cosmetics: guitar
     slots: [21]
+  goldenCape:
+    type: COSMETICS
+    cosmetics: golden_cape
+    slots: [22]
+  heartCape:
+    type: COSMETICS
+    cosmetics: heart_cape
+    slots: [23]
+  kingCape:
+    type: COSMETICS
+    cosmetics: king_cape
+    slots: [24]
   helmetCategory:
     type: OPEN_GUI
     gui: helmet1.yml

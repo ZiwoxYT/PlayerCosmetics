@@ -7,6 +7,14 @@ defaultPage: 'backpack1.yml'
 # (Only use this If you have the old configuration cosmetics.yml)
 useOldConfig: false
 
+# This value is for fixing the chunk issue, make sure the value is lower
+# than 'entity-tracking-range.players' from your 'spigot.yml'
+tracking-range: 40
+
+# How long should we wait before equipping cosmetics (used on teleport event)
+# The time is in ticks (20 ticks = 1 second)
+equip-delay: 40
+
 # Should we keep updating placeholder value on the cosmetics gui?
 # The time is in ticks, 20 ticks = 1 second
 autoRefresh:
@@ -55,27 +63,13 @@ crawlUnequip: true
 # Turn this on If you're having a sound spamming while equipping helmet
 helmetIssues: false
 
-# List of teleportation commands to fix the current issues
-# If the command on the list is executed, we will remove the backpack
-# and the backpack will re-equip again
-# Note: all commands below must be on lower cases
-# Explanation:
-# (number) - The delay number in second
-#   (list of commands) - If you executed one of those command, your backpack will be unequipped for
-#                         x seconds, depends on the number.
-teleportationUnequip:
-  5:
-    - "/mv tp"
-    - "/mvtp"
-    - "/warp"
-    - "/tp"
-    - "/tpaccept"
-  120:
-    - "/tpa"
+# Should we remove or unequip backpack temporarily If player is looking down?
+lookingDownRemove: false
 
-# Should we instantly re-equip the cosmetics if player is already
-# teleported instead waiting for the delay?
-instantReEquip: true
+# If player enters one of these worlds, the cosmetics will be unequipped
+blacklistedWorlds:
+  - "blacklisted"
+  - "world_pvp"
 
 # The aliases of /cosmetics command
 commandAliases:
@@ -98,4 +92,6 @@ messages:
     - "&6- /cosmetics help &7- shows help messages"
     - "&6- /cosmetics equip (cosmetics) [player] &7- equip cosmetics for you/others"
     - "&6- /cosmetics unequip (player) [backpack/helmet] &7- un-equip cosmetics for you/others"
+    - "&6- /cosmetics wardrobesetup &7- open up wardrobe setup gui"
+    - "&6- /cosmetics wardrobe [player] &7- force you or specific player to enter wardrobe"
     - "&6- /cosmetics reload &7- reload the configuration"

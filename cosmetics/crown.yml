@@ -8,6 +8,14 @@ cosmetic-item:
   lore:
     - "&7Only the best player wears this crown!"
 
+# Commands that will be executed after equipping cosmetics
+# Use {player} for the player's username
+commands-on-equip: []
+
+# Commands that will be executed after unequipping cosmetics
+# use {player} for the player's username
+commands-on-unequip: []
+
 # The type of the cosmetics
 # Currently available cosmetics:
 # - BACKPACK
