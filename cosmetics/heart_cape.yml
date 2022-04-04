@@ -3,7 +3,7 @@
 cosmetic-item:
   material: PAPER
   display-name: "&c&lHeart Cape"
-  customModelData: 11019
+  customModelData: 11020
   glowing: false
   lore:
     - "&7Any information here..."
@@ -39,7 +39,7 @@ paintable: false
 # have permission to use this cosmetic.
 unlockedItem:
   material: PAPER
-  customModelData: 11019
+  customModelData: 11020
   name: "&c&lHeart Cape &a(Unlocked)"
   glowing: false
   lore:
@@ -51,7 +51,7 @@ unlockedItem:
 # have permission tto use this cosmetic.
 lockedItem:
   material: PAPER
-  customModelData: 11019
+  customModelData: 11020
   name: "&c&lHeart Cape &c(Locked)"
   glowing: false
   lore:

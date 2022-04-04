@@ -51,7 +51,7 @@ unlockedItem:
 # have permission tto use this cosmetic.
 lockedItem:
   material: PAPER
-  customModelData: 8011
+  customModelData: 11016
   name: "&bAxolotl &c(Locked)"
   glowing: false
   lore:

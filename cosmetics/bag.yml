@@ -50,8 +50,8 @@ unlockedItem:
 # This information will be used on cosmetic gui when player doesn't
 # have permission tto use this cosmetic.
 lockedItem:
-  material: PAPER
-  customModelData: 8011
+  material: LEATHER_HORSE_ARMOR
+  customModelData: 10034
   name: "&bBag &c(Locked)"
   glowing: false
   lore:

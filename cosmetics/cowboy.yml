@@ -50,7 +50,7 @@ unlockedItem:
 # have permission tto use this cosmetic.
 lockedItem:
   material: PAPER
-  customModelData: 8011
+  customModelData: 8003
   name: "&bCowboy &c(Locked)"
   glowing: false
   lore:
